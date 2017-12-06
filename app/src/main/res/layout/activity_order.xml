@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.suwitsaengkaew.myrestaurant.OrderActivity">
+
+
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txtShowOfficer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="New Text"
+            android:textSize="25dp" />
+
+        <ListView
+            android:id="@+id/foodListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtShowOfficer"
+            android:layout_marginTop="15dp">
+
+        </ListView>
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtDesk"
+            android:layout_toRightOf="@id/txtShowOfficer"
+            android:layout_marginLeft="20dp"
+            android:hint="Table : "/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
